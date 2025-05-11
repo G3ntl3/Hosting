@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: gray">
+    <!-- <div
+      style="
+        margin: auto;
+        width: 400px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      "
+    >
+      <h1>Temu Express</h1>
+      <input type="text" id="item" style="padding: 10px" />
+      <button
+        onclick="AddItem() "
+        style="padding: 10px; color: white; background-color: rgb(0, 0, 0)"
+      >
+        Add item to cart
+      </button>
+    </div> -->
+
+    
+  </body>
+  <script>
+  //   const cart = [];
+
+  //   const AddItem = () => {
+  //     if (item.value == "") {
+  //       alert("Enter something better");
+  //     } else {
+  //       cart.push(item.value);
+  //       console.log(cart);
+  //       document.createElement('li').value=cart
+  //     }
+  //   };
+
+  // mmmmmmmr femi
+  const cart = []
+
+const addItem = () => {
+    if(item.value === '') {
+        alert('Haba now, fill in the inputs joor')
+    } else {
+        cart.push(item.value)
+        document.getElementById('item').value = ''
+        console.log(cart);
+
+        displayItem()
+    }
+}
+
+const displayItem = () => {
+    show.innerHTML = ""
+        for(let i=0;i < cart.length;i++) {
+            show.innerHTML += `
+                <p>${i+1}. ${cart[i]}</p>
+            `
+        }
+}
+
+// const test1 = ['Segun', 'Tolu', 'Kola', 'Jerry']
+// console.log(test1.length);
+
+// for(i=0; i < test1.length; i++) {
+//     console.log(test1[i]);
+    
+// }
+
+
+
+// all users are dumb
+  // </script>
+</html>
