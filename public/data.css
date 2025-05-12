@@ -71,7 +71,7 @@ background-color: rgb(46,175,219);
 
 
 
-@media (max-width:428px) {
+@media (max-width:600px) {
 
 .navbar{
     display: none;
